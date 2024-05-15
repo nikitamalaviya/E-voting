@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import DataTable from '../../Atoms/DataTable';
+
 import {
   Box,
   Button,
@@ -10,8 +10,10 @@ import {
   FormControl,
 } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { ADD_CONNECTION_PENDING, GET_ALL_CONNECTION_PENDING, GET_ALL_ELECTION_PENDING, GET_ALL_PARTY_PENDING } from '../../redux-saga/admin/action/Action';
+import { ADD_CONNECTION_PENDING, GET_ALL_CONNECTION_PENDING, GET_ALL_ELECTION_PENDING, GET_ALL_PARTY_PENDING } from '../../redux-saga/admin/Action';
 import { election_get_req, party_get_req, partylist_get_req, partylist_post_req } from '../../redux-saga/Constant';
+import DataTable from '../../Atoms/DataTable';
+// import DataTable from '../../atoms/DataTable';
 
 const Connection = () => {
   const [selectedElection, setSelectedElection] = useState('');

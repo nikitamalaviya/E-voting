@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { MdSpaceDashboard } from "react-icons/md";
-import { FaBuildingUser, FaPeopleGroup} from "react-icons/fa6";
+// import { MdSpaceDashboard } from "react-icons/md";
+// import { FaBuildingUser, FaPeopleGroup} from "react-icons/fa6";
 import { GiVendingMachine } from "react-icons/gi";
 import { ImConnection } from "react-icons/im";
+import { MdSpaceBar } from 'react-icons/md';
 
 
 const AdminNavbar = () => {
@@ -28,7 +29,7 @@ const AdminNavbar = () => {
                         <li class="nav-link">
     
                           <Link to="/dashboard" style={{ textDecoration: "none", color: "black" }}><a href="#">
-                            <MdSpaceDashboard style={{ fontSize: "25px", color: "#707070", paddingRight: "5px" }} />
+                            <MdSpaceBar style={{ fontSize: "25px", color: "#707070", paddingRight: "5px" }} />
                             <span class="text nav-text"> Dashboard</span>
                           </a></Link>
                         </li>
